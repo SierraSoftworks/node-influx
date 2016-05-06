@@ -211,42 +211,42 @@ declare module "influx" {
             /**
              * Writes a point to a series - requires database user privileges
              */
-            writePoint(seriesName: string, value: PointValue, tags: PointTags, callback: (err: Error) => void);
+            writePoint(seriesName: string, value: PointValue, tags: PointTags, callback?: (err: Error) => void);
 
             /**
              * Writes a point to a series - requires database user privileges
              */
-            writePoint(seriesName: string, value: PointValue, tags: PointTags, options: WriteOptions, callback: (err: Error) => void);
+            writePoint(seriesName: string, value: PointValue, tags: PointTags, options: WriteOptions, callback?: (err: Error) => void);
 
             /**
              * Writes a point to a series - requires database user privileges
              */
-            writePoint(seriesName: string, values: PointValues, tags: PointTags, callback: (err: Error) => void);
+            writePoint(seriesName: string, values: PointValues, tags: PointTags, callback?: (err: Error) => void);
 
             /**
              * Writes a point to a series - requires database user privileges
              */
-            writePoint(seriesName: string, values: PointValues, tags: PointTags, options: WriteOptions, callback: (err: Error) => void);
+            writePoint(seriesName: string, values: PointValues, tags: PointTags, options: WriteOptions, callback?: (err: Error) => void);
 
             /**
              * Writes multiple points to a series - requires database user privileges
              */
-            writePoints(seriesName: string, points: PointsArray[], callback: (err: Error) => void);
+            writePoints(seriesName: string, points: PointsArray[], callback?: (err: Error) => void);
 
             /**
              * Writes multiple points to a series - requires database user privileges
              */
-            writePoints(seriesName: string, points: PointsArray[], options: WriteOptions, callback: (err: Error) => void);
+            writePoints(seriesName: string, points: PointsArray[], options: WriteOptions, callback?: (err: Error) => void);
 
             /**
              * Writes multiple point to multiple series - requires database user privileges
              */
-            writeSeries(series: { [name: string]: PointsArray[]; }, callback: (err: Error) => void);
+            writeSeries(series: { [name: string]: PointsArray[]; }, callback?: (err: Error) => void);
 
             /**
              * Writes multiple point to multiple series - requires database user privileges
              */
-            writeSeries(series: { [name: string]: PointsArray[]; }, options: WriteOptions, callback: (err: Error) => void);
+            writeSeries(series: { [name: string]: PointsArray[]; }, options: WriteOptions, callback?: (err: Error) => void);
 
             /**
              * Queries the database and returns an array of parsed responses. - requires database user privileges.
